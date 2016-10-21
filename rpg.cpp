@@ -27,7 +27,7 @@ int main()
 		for (int i = 0; i < 4; i++)
 		{
 
-			cout << HP[i] << endl;
+			cout << "Player " << HP[i] << "HP:" << HP[i] << endl;
 		}
 
 		cout << "Who do you want to attack?" << endl;
@@ -46,7 +46,7 @@ int main()
 			attackWho = rand() % 4; // Between 0 and 3.
 			HP[attackWho] = HP[attackWho] - 5;
 
-			cout << "Player " << i << " attacks " << attackWho << " hit for 5 damage." << endl;
+			cout << "Player " << i << " attacks " << "player " << attackWho << " hit for 5 damage." << endl;
 									
 		}
 
@@ -57,7 +57,7 @@ int main()
 			done = true;
 		}
 
-		else
+		if (HP[1] <= 0 && HP[2] <= 0 && HP[3] <= 0)
 		{
 			cout << "YOU WIN!" << endl;
 			done = true;
