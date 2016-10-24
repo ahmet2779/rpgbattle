@@ -27,7 +27,7 @@ int main()
 		for (int i = 0; i < 4; i++)
 		{
 
-			cout << "Player " << HP[i] << "HP:" << HP[i] << endl;
+			cout << "Player " << i << " HP:" << HP[i] << endl;
 		}
 
 		cout << "Who do you want to attack?" << endl;
